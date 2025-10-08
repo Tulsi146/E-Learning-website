@@ -1,0 +1,139 @@
+.gal{
+    width: 100%;
+    padding: 60px 0px;
+
+}
+
+.title4 h1{
+    font-size: 40px;
+    color: #000;
+    margin-bottom: 8px;
+    font-family: 'Rubik', sans-serif;
+}
+.title4 p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #444;
+    max-width: 767px;
+    margin: 0px auto;
+}
+
+
+.box img{
+    /* height:100%; */
+    width: 100%;
+    border-radius: 15px 15px;
+}
+
+.main4{
+    margin-top: 30px;
+}
+
+.gallery-ico a{
+    color: #000;
+}
+
+.gallery-ico{
+    height: 60px;
+    width: 60px;
+    background-color: #ffc600;
+    margin: 0px auto 8px;
+    /* color: #000; */
+    line-height: 62px;
+    border-radius: 100%;
+    font-size: 24px;
+}
+/* .pic1{
+    margin-top: 35px;
+    display: flex;
+} */
+
+.box {
+    /* height: 100%; */
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.box{
+    margin-top: 20px;
+}
+/* Background Overlay (Initially Hidden) */
+.box::before{
+    content: "";
+    background-color: rgba(7, 41, 77, 0.8); /* Dark overlay */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;  /* Initially invisible */
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 8px;
+}
+
+/* Icon/Text Styling */
+.single-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%); /* Start above */
+    text-align: center;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0; /* Initially hidden */
+    color: white;
+}
+
+/* Hover Effect */
+.box:hover::before {
+    opacity: 1;  /* Background appears */
+}
+
+.box:hover .single-description {
+    transform: translate(-50%, -50%); /* Moves to center */
+    opacity: 1;
+}
+
+
+.filter{
+    text-align: center;
+    margin: 30px 0px 0px;
+
+}
+
+.filter ul li{
+    background-color: #eee;
+    border:none;
+    padding: 4px 25px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 8px;
+}
+/* .filter ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+} */
+/* .filter .active{
+    border:none;
+    padding: 5px 25px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+    font-weight: 600;
+
+} */
+.filter ul li.active{
+    background-color: #ffc600;
+    
+}
+.filter ul li{
+    list-style: none;
+}
+
+
+  

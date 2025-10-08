@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="form3.css"rel="stylesheet" type="text/css">
+</head>
+<body>
+    <form action="/action-page.php" method="post">
+        <div class="imgcontainer">
+            <img src="user.webp"  alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <table>
+                <tr>
+            <td><label for="uname"><b>Username:</b></label></td>
+            <td><label for="psw" style="margin-left: 50px;"><b>Password:</b></label> </td>
+                </tr>
+                <tr>
+            <td ><input type="text" placeholder="Enter Username" name="uname" required></td>
+            <td><input type="password" placeholder="Enter Password" name="psw" required></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="form-group">
+            <label ><b>Gender</b></label>
+        
+            <div class="table">
+
+            
+            
+    
+
+            <input type="radio" name="gender"  value="Male" >
+            <label for="gender">Male</label>
+
+            <input type="radio" name="gender" value="Female" >
+            <label  for="gender">Female</label>
+        
+            <input type="radio" name="gender"  value="Others">
+                <label  for="gender">Others</label>
+                </div>
+        </div>
+
+        <div class="form-group1">
+            <label><b>Hobbies</b></label>
+        
+            <div class="table1">
+
+        
+            <input type="checkbox" name="hobbies" value="Criket" >
+            <label  for="hobbies">Criket</label>
+    
+
+            <input type="checkbox" name="hobbies" value="Swim" >
+            <label for="hobbies">Swim</label>
+        
+            <input type="checkbox" name="hobbies" value="Hockey">
+            <label  for="hobbies">Hockey</label>
+
+            
+            <input type="checkbox" name="hobbies" value="Football" >
+            <label  for="gender">Football</label>
+        
+    
+            <input type="checkbox" name="hobbies" value="Gym" >
+            <label for="hobbies">Gym</label>
+            
+            <input type="checkbox" name="hobbies" value="Running">
+            <label  for="hobbies">Running</label>
+                </div>
+        </div>
+        
+        
+    </form>
+
+</body>
+</html>

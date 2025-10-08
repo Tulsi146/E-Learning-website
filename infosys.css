@@ -1,0 +1,189 @@
+.html{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+.info {
+    width:100%;
+    background-color:#007dc3;
+    color:white; 
+    height:40px;
+}
+/* .nav sup{
+    font-size:15px;
+} */
+.info td{
+    border: none;
+
+}
+.rate {
+    width:80%;
+    margin:auto;
+    border:1px solid #0077b6;
+    margin-top:20px;
+    border-collapse: collapse;
+    text-align: center;
+    font-size:25px; 
+    padding-top: 2%;
+    height:130px; 
+/* write caption inside table */
+    margin-bottom: 30px;
+}
+.rate th{
+    border:none;
+    
+    
+}
+.rate td{
+    font-size:20px;
+
+}
+.rev{
+    color: #007dc3;
+    font-size: 20px;
+    margin-left: 10%;
+    font-weight: bold
+}
+
+.col,td,th{
+    border:1px solid #22c6e7;
+    border-collapse: collapse;
+}
+.col{
+    width: 80%;
+    margin:auto;
+    margin-top:0;
+
+    
+    }
+
+caption{
+        font-size: 1.2rem;
+        text-align: left;
+        color: #007dc3;
+    }
+.col tr:nth-child(odd) {
+    background-color: lightblue;
+}
+
+.rate td,th{
+    border:none;
+    text-align:center;
+    
+
+}
+.rate{
+    border: none;
+}
+.row{
+    background-color: #2894ce;
+}
+.row1{
+    background-color: #2597d4;
+    text-align:center;
+}
+.digi,th,td{
+    text-align: right;
+}
+.core,th{
+    text-align: left;
+
+}
+
+.col4,td,th{
+    border:1px solid #22c6e7;
+    border-collapse: collapse;
+}
+
+.col4 tr:nth-child(even){
+        background-color: lightblue;
+    }
+
+.col5 tr:nth-child(even){
+        background-color: lightblue;
+    }
+
+.col4 th{
+    margin-bottom: 15%;
+}
+
+.col4{
+    width: 80%;
+    margin:auto;
+    
+   
+}
+
+.col7 tr:nth-child(even){
+        background-color: lightblue;
+    }
+
+.col8 tr:nth-child(even){
+    background-color: lightblue;
+}
+.digital th{
+    text-align: left;
+
+}
+.Service th{
+    text-align: right;
+}
+
+.col5{
+    width: 80%;
+    margin:auto;
+    border-collapse: collapse;
+
+}
+.col5 td,th{
+    border:1px solid #22c6e7;
+}
+
+.row5 th{
+    background-color:  #2894ce;
+}
+.col7{
+    width:80%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.col8{
+    width: 80%;
+    margin:auto;
+    border-collapse: collapse;
+
+
+}
+.board-members td{
+    /* border:1px solid red; */
+    border: none;
+}
+.board-members{
+    width:80%;
+    margin:auto; 
+    text-align: center;
+    ;
+    /* margin:10%; */
+}
+.board-members td img {
+  
+    border-radius: 50%;
+
+    
+
+    /* margin-left:10%; */
+    /* margin-right: 19%; */
+}
+.senior td{
+    /* border:1px solid red; */
+    border: none;
+}
+.senior{
+    width:80%;
+    margin:auto; 
+    /* margin:10%; */
+}
+.senior td img {
+    border-radius: 50%;
+}

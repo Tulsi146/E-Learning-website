@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jQuery (Required for Isotope filtering) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Isotope JS CDN -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Filter Buttons -->
+<div class="filters">
+    <button data-filter="*">Show All</button>
+    <button data-filter=".category1">Category 1</button>
+    <button data-filter=".category2">Category 2</button>
+  </div>
+  
+  <!-- Grid Container -->
+  <div class="grid">
+    <div class="grid-item category1">Item 1</div>
+    <div class="grid-item category2">Item 2</div>
+    <div class="grid-item category1 grid-item--width2">Item 3 (Double Width)</div>
+    <div class="grid-item category2">Item 4</div>
+    <div class="grid-item category1">Item 5</div>
+  </div>
+  
+
+  <script>
+  $(document).ready(function(){
+    // Initialize Isotope
+    var $grid = $('.grid').isotope({
+      itemSelector: '.grid-item',
+      layoutMode: 'masonry',  // Masonry layout
+      percentPosition: true,
+      masonry: {
+        columnWidth: '.grid-item'
+      }
+    });
+  
+    // Filtering items on button click
+    $('.filters button').click(function(){
+      var filterValue = $(this).attr('data-filter');
+      $grid.isotope({ filter: filterValue });
+    });
+  });
+  </script>
+</body>
+</html>

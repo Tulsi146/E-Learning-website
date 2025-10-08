@@ -1,0 +1,74 @@
+
+.gallery-ico{
+    height: 60px;
+    width: 60px;
+    background-color: #ffc600;
+    margin: 0px auto 8px;
+    color: #000;
+    line-height: 62px;
+    border-radius: 100%;
+    font-size: 24px;
+}
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Background Overlay (Initially Hidden) */
+.box1::before,
+.box2::before,
+.box3::before,
+.box4::before,
+.box5::before,
+.box6::before{
+    content: "";
+    background-color: rgba(7, 41, 77, 0.8); /* Dark overlay */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;  /* Initially invisible */
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 8px;
+}
+
+/* Icon/Text Styling */
+.single-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%); /* Start above */
+    text-align: center;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0; /* Initially hidden */
+    color: white;
+}
+
+/* Hover Effect */
+.box1:hover::before,
+.box2:hover::before,
+.box3:hover::before,
+.box4:hover::before,
+.box5:hover::before,
+.box6:hover::before {
+    opacity: 1;  /* Background appears */
+}
+
+.box1:hover .single-description,
+.box2:hover .single-description,
+.box3:hover .single-description,
+.box4:hover .single-description,
+.box5:hover .single-description,
+.box6:hover .single-description {
+    transform: translate(-50%, -50%); /* Moves to center */
+    opacity: 1;
+}
